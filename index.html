@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML, CSS, основы, примеры">
+<meta name="description" content="Примеры всех тегов из презентации по основам HTML и CSS">
+<title>Основы HTML и CSS — примеры</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Основы HTML и CSS</h1>
+<p>Примеры всех тегов из презентации</p>
+</header>
+
+<!-- Основной контент -->
+<main>
+<!-- Раздел HTML-тегов -->
+<section>
+<h2>HTML-теги</h2>
+
+<!-- Парные теги: h1-h6, p, ul, ol, dl, pre, code, blockquote, q, cite, em, i, strong, b, del, ins, div, span -->
+<article>
+<h3>Заголовки (h1-h6)</h3>
+<h1>Заголовок h1</h1>
+<h2>Заголовок h2</h2>
+<h3>Заголовок h3</h3>
+<h4>Заголовок h4</h4>
+<h5>Заголовок h5</h5>
+<h6>Заголовок h6</h6>
+</article>
+
+<article>
+<h3>Параграф (p)</h3>
+<p>Это абзац текста. Он начинается с новой строки и имеет отступы сверху и снизу.</p>
+<p>Второй абзац для демонстрации.</p>
+</article>
+
+<article>
+<h3>Неупорядоченный список (ul)</h3>
+<ul>
+<li>Пункт 1</li>
+<li>Пункт 2</li>
+<li>Пункт 3</li>
+</ul>
+</article>
+
+<article>
+<h3>Упорядоченный список (ol)</h3>
+<ol start="5" reversed type="A">
+<li>Пункт с start=5, reversed, type=A</li>
+<li>Второй пункт</li>
+<li>Третий пункт</li>
+</ol>
+<ol type="i">
+<li>Римские цифры (строчные)</li>
+<li>Второй</li>
+</ol>
+</article>
+
+<article>
+<h3>Список описаний (dl, dt, dd)</h3>
+<dl>
+<dt>HTML</dt>
+<dd>Язык гипертекстовой разметки</dd>
+<dt>CSS</dt>
+<dd>Каскадные таблицы стилей</dd>
+</dl>
+</article>
+
+<article>
+<h3>Преформатированный текст (pre) и код (code)</h3>
+<pre>
+function hello() {
+console.log("Hello, world!");
+}
+</pre>
+<p>Фрагмент кода: <code>const x = 10;</code></p>
+<pre><code>
+<!-- комментарий в HTML -->
+<p>Пример кода внутри pre и code</p>
+</code></pre>
+</article>
+
+<article>
+<h3>Цитаты (q, cite, blockquote)</h3>
+<p>Как сказал кто-то: <q>Это короткая цитата</q>.</p>
+<cite>Автор: Иван Иванов</cite>
+<blockquote>
+<p>Это длинная цитата, которая может состоять из нескольких абзацев. Она выделяется отступами.</p>
+<p>Второй абзац цитаты.</p>
+</blockquote>
+</article>
+
+<article>
+<h3>Акцентирование (em, i, strong, b)</h3>
+<p><em>Это текст с акцентом (em)</em>, <i>а это просто курсив (i)</i>.</p>
+<p><strong>Это важный текст (strong)</strong>, <b>а это просто жирный (b)</b>.</p>
+</article>
+
+<article>
+<h3>Изменения (del, ins)</h3>
+<p>Это <del>удалённый текст</del> и <ins>вставленный текст</ins>.</p>
+</article>
+
+<article>
+<h3>Разделение контента (div, span)</h3>
+<div style="border:1px solid #ccc; padding: 10px;">
+<p>Это блок <strong>div</strong> с рамкой.</p>
+<p>А это <span style="color: red;">текст внутри span</span> (красный).</p>
+</div>
+</article>
+
+<article>
+<h3>Перенос строк (br)</h3>
+<p>Строчка 1<br>Строчка 2<br>Строчка 3</p>
+</article>
+
+<article>
+<h3>Верхний и нижний индексы (sup, sub)</h3>
+<p>Формула воды: H<sub>2</sub>O</p>
+<p>Степень: x<sup>2</sup> + y<sup>2</sup></p>
+</article>
+
+<article>
+<h3>Дата и время (time)</h3>
+<p>Дата: <time datetime="2026-09-01">1 сентября 2026</time></p>
+</article>
+
+<article>
+<h3>Символы-мнемоники</h3>
+<p>Знак «меньше»: < , знак «больше»: > , амперсанд: &</p>
+</article>
+
+<article>
+<h3>img (одиночный тег)</h3>
+<img src="https://via.placeholder.com/150x100?text=Пример" alt="Пример картинки" width="150" height="100">
+<p>Картинка с атрибутами src, width, height</p>
+</article>
+
+<article>
+<h3>Комментарии (в коде)</h3>
+<!-- Это комментарий в HTML. Он не отображается на странице. -->
+<p>Комментарий в коде (см. исходник).</p>
+</article>
+</section>
+
+<!-- Раздел CSS-примеров (классы и стили) -->
+<section>
+<h2>CSS-примеры</h2>
+
+<div class="feature-kitten">
+<p>Абзац с классом feature-kitten (стили в CSS).</p>
+</div>
+
+<div class="base-modifier">
+<p class="base-modifier__text">Элемент с миксованием классов: base и modifier.</p>
+</div>
+
+<div class="styled-list">
+<ul>
+<li>Список с кастомными стилями (без маркеров, другой фон)</li>
+<li>Второй пункт</li>
+</ul>
+</div>
+
+<div class="color-examples">
+<p style="color: rgb(255, 0, 0);">RGB красный</p>
+<p style="color: rgba(0, 255, 0, 0.7);">RGBA зеленый с прозрачностью</p>
+<p style="color: #0000FF;">HEX синий</p>
+<p style="color: hsl(240, 100%, 50%);">HSL синий</p>
+<p style="color: white; background-color: #333;">Белый текст на тёмном фоне</p>
+</div>
+
+<div class="font-examples">
+<p style="font-size: 14px;">Размер шрифта 14px</p>
+<p style="font-size: 1.2em;">Размер шрифта 1.2em (относительно родителя)</p>
+<p style="font-size: 120%;">Размер шрифта 120%</p>
+<p style="font-size: 2vw;">Размер шрифта 2vw (относительно ширины окна)</p>
+</div>
+</section>
+</main>
+
+<footer>
+<p>Подвал (footer) — заключительная часть страницы.</p>
+<nav>
+<a href="#">Главная</a> | <a href="#">О нас</a> | <a href="#">Контакты</a>
+</nav>
+</footer>
+
+<!-- aside (сайдбар) -->
+<aside>
+<p>Дополнительная информация (aside) — боковая панель.</p>
+</aside>
+
+<!-- Демонстрация встроенных стилей через атрибут style (пример из презентации) -->
+<div style="background-color: #f0f0f0; padding: 10px; border: 1px solid #999;">
+<p>Блок со встроенными стилями (атрибут style).</p>
+</div>
+</body>
+</html>
